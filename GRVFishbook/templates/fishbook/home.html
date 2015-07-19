@@ -5,14 +5,32 @@
 {% block title %}Index{% endblock %}
 
     {% block body_block %}
+            <h1 class="page-header">Dashboard</h1>
 
-    <div class="page-header">
-        {% if user.is_authenticated %}
-            <h1>Hello {{ user.username }}!</h1>
-        {% else %}
-            <h1>Hello porco cane de um site massa!</h1>
-        {% endif %}
-    </div>
+            <div class="row placeholders">
+              <div class="col-xs-6 col-sm-3 placeholder">
+                <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-6 col-sm-3 placeholder">
+                <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-6 col-sm-3 placeholder">
+                <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-6 col-sm-3 placeholder">
+                <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+            </div>
+
+            <h2 class="sub-header">Section title</h2>
 
          <div class="row placeholders">
             <div class="col-xs-12 col-sm-6 placeholder">
@@ -51,8 +69,4 @@
                 {% endif %}
             </div>
 
-          </div>
-
-
-       <p> visits: {{ visits }}</p>
         {% endblock %}

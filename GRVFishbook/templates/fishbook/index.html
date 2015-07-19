@@ -47,6 +47,7 @@
             
 			<form class="form-signin" id="login_form" method="post" action="/fishbook/login/">
 			    <h2 class="form-signin-heading">Please sign in</h2>
+			    <a href="{% url 'register' %}">Register</a>
 			    {% csrf_token %}
 
 			    {% if login_error %}

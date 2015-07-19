@@ -4,17 +4,13 @@
 
 {% block body_block %} 
 
-    <h1>Register</h1>
+    <h1 class="page-header">Register new user</h1>
 
     {% if registered %}
 
-        Fishbook says: <strong>thank you for registering!</strong>
-        <a href="{% url 'index' %}">Return to the homepage.</a><br />
+        Fishbook says: <strong>user created.</strong>
 
     {% else %}
-
-        Rango says: <strong>register here!</strong><br />
-
         <form id="user_form" method="post" action="{% url 'register' %}"
                 enctype="multipart/form-data">
 
