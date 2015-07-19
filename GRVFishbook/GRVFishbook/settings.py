@@ -113,3 +113,6 @@ STATIC_URL = '/static/' # You may find this is already defined as such.
 STATICFILES_DIRS = (
     STATIC_PATH,
 )
+
+REGISTRATION_OPEN = False                # If True, users can register
+LOGIN_URL = '/fishbook/'  # The page users are directed to if they are not logged in and are trying to access pages requiring authentication
